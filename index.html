@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Technical Documentation for R Language" />
+    <title>R Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>R Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Control_Structures">Control Structures</a>
+        </li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Packages">Packages</a></li>
+        <li><a class="nav-link" href="#Advanced_Topics">Advanced Topics</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            R is a programming language and free software environment for
+            statistical computing and graphics. It is widely used among
+            statisticians and data scientists for developing statistical
+            software and data analysis.
+          </p>
+          <p>
+            R provides a wide variety of statistical and graphical techniques,
+            and it is highly extensible through the use of packages. It is
+            designed to be intuitive and expressive, making it easy to learn and
+            use for both beginners and experienced programmers.
+          </p>
+          <p>
+            In addition to its statistical capabilities, R also provides
+            facilities for data manipulation and visualization. It has a rich
+            set of functions and libraries for importing, exporting, cleaning,
+            and transforming data, as well as generating a wide range of static
+            and interactive plots and charts. R's extensive ecosystem of
+            packages makes it a powerful tool for exploratory data analysis,
+            hypothesis testing, and predictive modeling.
+          </p>
+          <ul>
+            <li>
+              R is a programming language and free software environment for
+              statistical computing and graphics.
+            </li>
+            <li>R is widely used among statisticians and data scientists.</li>
+            <li>
+              R provides a wide variety of statistical and graphical techniques.
+            </li>
+            <li>R is highly extensible through the use of packages.</li>
+            <li>R is designed to be intuitive and expressive.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <p>
+            R has various data types, including numeric, character, logical, and
+            factor. These data types are used to represent different kinds of
+            information in R.
+          </p>
+          <p>
+            Numeric data types are used to represent numerical values, while
+            character data types are used to represent text strings. Logical
+            data types represent Boolean values (TRUE or FALSE), and factor data
+            types represent categorical variables.
+          </p>
+          <p>
+            Understanding data types is crucial for effective data analysis and
+            manipulation in R. Different operations and functions may require
+            specific data types as input, and knowing how to work with each type
+            allows for more efficient and accurate programming.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>In R, variables are used to store data values.</p>
+          <p>
+            Variable names must start with a letter or a dot, followed by any
+            number of letters, numbers, dots, or underscores. Variable names are
+            case-sensitive.
+          </p>
+          <p>
+            Variables can be assigned values using the assignment operator
+            (<code>&lt;-</code>) or the equals sign (<code>=</code>). For
+            example: <code>x &lt;- 10</code> or <code>y = "hello"</code>.
+          </p>
+          <p>
+            Understanding variables is fundamental to programming in R. They
+            allow for the storage and manipulation of data, enabling complex
+            calculations and analysis. Proper naming and usage of variables
+            improve code readability and maintainability.
+          </p>
+          <pre><code>
+          # Define a numeric variable
+          x <- 10
+          # Print the value of x
+          print(x)
+
+          # Define a character variable
+          y <- "hello"
+          # Print the value of y
+          print(y)
+        </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Control_Structures">
+        <header>Control Structures</header>
+        <article>
+          <p>
+            R supports various control structures such as if-else statements,
+            loops, and switch statements. These control structures allow for
+            conditional execution and looping in R programs.
+          </p>
+          <p>
+            If-else statements are used to execute different blocks of code
+            depending on whether a condition is true or false. Loops, such as
+            for loops and while loops, are used to execute a block of code
+            repeatedly. Switch statements are used to execute different blocks
+            of code depending on the value of a variable.
+          </p>
+          <p>
+            Control structures are essential for writing dynamic and flexible
+            code in R. They allow for the implementation of complex algorithms
+            and decision-making processes. Understanding control structures
+            enables programmers to write efficient and concise code for various
+            tasks.
+          </p>
+          <pre><code>
+          # Example of an if-else statement
+          if (x > 5) {
+            print("x is greater than 5")
+          } else {
+            print("x is less than or equal to 5")
+          }
+
+          # Example of a for loop
+          for (i in 1:5) {
+            print(paste("Iteration", i))
+          }
+        </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+          <p>
+            Functions in R are created using the
+            <code>function()</code> keyword.
+          </p>
+          <p>
+            They are used to encapsulate a set of statements into a single unit
+            that can be called repeatedly. Functions can take arguments and
+            return values. They are a fundamental building block of R
+            programming and are used extensively in data analysis and
+            statistical modeling.
+          </p>
+          <p>
+            Functions are essential for modularizing code and promoting
+            reusability. They allow for the separation of concerns, making code
+            easier to understand and maintain. Well-designed functions enhance
+            code readability and scalability, contributing to the development of
+            robust and efficient R programs.
+          </p>
+          <pre><code>
+          # Define a simple function
+          square <- function(x) {
+            return(x^2)
+          }
+          # Call the function
+          result <- square(5)
+          print(result)
+        </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Packages">
+        <header>Packages</header>
+        <article>
+          <p>
+            R packages are collections of functions, data, and documentation
+            that extend the capabilities of base R. There are thousands of
+            packages available for various purposes, such as data manipulation,
+            visualization, and machine learning.
+          </p>
+          <p>
+            Packages can be installed from the Comprehensive R Archive Network
+            (CRAN) using the <code>install.packages()</code> function. Once
+            installed, packages can be loaded into R using the
+            <code>library()</code> function. Additionally, packages can be
+            developed and shared by the R community, allowing for collaborative
+            software development and knowledge sharing.
+          </p>
+          <p>
+            Leveraging packages is essential for leveraging advanced
+            functionality and expanding the capabilities of R. By utilizing
+            existing packages, programmers can streamline their workflows and
+            focus on solving specific problems without reinventing the wheel.
+            Furthermore, packages facilitate reproducible research and promote
+            best practices in data analysis and statistical modeling.
+          </p>
+          <pre><code>
+          # Install a package from CRAN
+          install.packages("ggplot2")
+
+          # Load the installed package
+          library(ggplot2)
+        </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Advanced_Topics">
+        <header>Advanced Topics</header>
+        <article>
+          <p>
+            R covers advanced topics such as parallel computing, web scraping,
+            and integrating R with other programming languages.
+          </p>
+          <p>
+            Advanced users can take advantage of specialized packages and
+            techniques to tackle complex data analysis tasks. For example, the
+            <code>parallel</code> package provides functions for parallel
+            computing, allowing users to speed up their computations by running
+            them in parallel across multiple cores or processors.
+          </p>
+          <p>
+            Exploring advanced topics in R opens up new possibilities for data
+            analysis and scientific research. By mastering advanced techniques
+            and tools, programmers can tackle real-world challenges and
+            contribute to the advancement of knowledge in their respective
+            fields. Continuous learning and experimentation are key to unlocking
+            the full potential of R as a powerful and versatile programming
+            language.
+          </p>
+          <pre><code>
+          # Example of using the parallel package for parallel computing
+          library(parallel)
+          # Create a cluster with 2 nodes
+          cl <- makeCluster(2)
+          # Define a function to be run in parallel
+          parallel_square <- function(x) {
+            return(x^2)
+          }
+          # Apply the function in parallel
+          result <- parLapply(cl, 1:4, parallel_square)
+          # Stop the cluster
+          stopCluster(cl)
+          # Print the result
+          print(result)
+        </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation on this page is adapted from
+              <a href="https://www.rdocumentation.org/">R Documentation</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
